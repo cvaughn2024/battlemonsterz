@@ -8,31 +8,32 @@
   <!-- Servlets -->
   <servlet>
     <servlet-name>IndexServlet</servlet-name>
-    <servlet-class>edu.ycp.cs320.lab02a.servlet.IndexServlet</servlet-class>
+    <servlet-class>edu.ycp.cs320.battlemonsterz.servlet.IndexServlet</servlet-class>
   </servlet>
   <servlet>
-    <servlet-name>AddNumbersServlet</servlet-name>
-    <servlet-class>edu.ycp.cs320.lab02a.servlet.AddNumbersServlet</servlet-class>
+    <servlet-name>AccountServlet</servlet-name>
+    <servlet-class>edu.ycp.cs320.battlemonsterz.servlet.AccountServlet</servlet-class>
   </servlet>
   <servlet>
-    <servlet-name>MultiplyNumbersServlet</servlet-name>
-    <servlet-class>edu.ycp.cs320.lab02a.servlet.MultiplyNumbersServlet</servlet-class>
+    <servlet-name>CardDatabaseServlet</servlet-name>
+    <servlet-class>edu.ycp.cs320.battlemonsterz.servlet.CardDatabaseServlet</servlet-class>
   </servlet>
   <servlet>
-    <servlet-name>GuessingGameServlet</servlet-name>
-    <servlet-class>edu.ycp.cs320.lab02a.servlet.GuessingGameServlet</servlet-class>
+    <servlet-name>PlayServlet</servlet-name>
+    <servlet-class>edu.ycp.cs320.battlemonsterz.servlet.PlayServlet</servlet-class>
   </servlet>
    
   
   <!-- AJAX servlets. -->
-  <servlet>
+ <!--  <servlet>
     <servlet-name>AddNumbersAjaxServlet</servlet-name>
     <servlet-class>edu.ycp.cs320.lab02a.servlet.ajax.AddNumbersAjaxServlet</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>NextGuessAjaxServlet</servlet-name>
     <servlet-class>edu.ycp.cs320.lab02a.servlet.ajax.NextGuessAjaxServlet</servlet-class>
-  </servlet>
+  </servlet> 
+  -->
 
   <!-- Servlet mappings -->
   <servlet-mapping>
@@ -40,20 +41,20 @@
     <url-pattern>/index</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>AddNumbersServlet</servlet-name>
-    <url-pattern>/addNumbers</url-pattern>
+    <servlet-name>PlayServlet</servlet-name>
+    <url-pattern>/play</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>MultiplyNumbersServlet</servlet-name>
-    <url-pattern>/multiplyNumbers</url-pattern>
+    <servlet-name>AccountServlet</servlet-name>
+    <url-pattern>/account</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>GuessingGameServlet</servlet-name>
-    <url-pattern>/guessingGame</url-pattern>
+    <servlet-name>CardDatabaseServlet</servlet-name>
+    <url-pattern>/carddatabase</url-pattern>
   </servlet-mapping>
   
   
-  <!--  AJAX servlet mappings. -->
+  <!--  AJAX servlet mappings. 
   <servlet-mapping>
     <servlet-name>AddNumbersAjaxServlet</servlet-name>
     <url-pattern>/ajax/addNumbers</url-pattern>
@@ -61,7 +62,7 @@
   <servlet-mapping>
     <servlet-name>NextGuessAjaxServlet</servlet-name>
     <url-pattern>/ajax/nextGuess</url-pattern>
-  </servlet-mapping>
+  </servlet-mapping>-->
 
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
