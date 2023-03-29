@@ -15,13 +15,18 @@
 		<button onclick="document.location='guessingGame'">Guessing Game</button>-->
 		
 		<form action="${pageContext.servletContext.contextPath}/login" method = "post">
-			<div>
-			<input name = "create_account" type = "text" value = "Create Account">
-			<input name = "login" type = "text" value = "Login">
-			<input name = "submit" type = "submit" value = "Submit">
-	
-			</div>
-		
+			<table>
+				<tr>
+					<td class="label"> Username </td>
+					<td><input type="text" name="username" size="12"  /></td>
+				</tr>
+				<tr>
+					<td class="label">Password</td>
+					<td><input type="text" name="password" size="12" /></td>
+				</tr>
+			
+			</table>
+			<input type="Submit" name="submit" value="Submit!">
 		</form>
 	</body>
 </html>
